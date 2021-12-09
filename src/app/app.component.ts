@@ -6,4 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  componentToDisplay: string = 'Recipes';
+
+  displaySelectedPage(pageName: string){
+    this.componentToDisplay = pageName;
+  }
 }
